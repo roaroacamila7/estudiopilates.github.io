@@ -791,6 +791,12 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
+    .hero-content { padding: 0 24px; margin-left: 0; text-align: center; }
+    .hero-content p { margin-left: auto; margin-right: auto; }
+    .hero-buttons { justify-content: center; }
+    .hero-deco { display: none; }
+    .hero-tag { text-align: center; display: block; }
+
     .nav-links {
         position: fixed;
         top: 0;

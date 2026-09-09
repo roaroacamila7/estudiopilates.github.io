@@ -3,333 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Pilates — Encuentra tu equilibrio</title>
+    <title>Studio Pilates — Movimiento consciente</title>
+    <meta name="description" content="Studio Pilates en Madrid. Clases de Pilates, Yoga y Meditación en un espacio diseñado para tu bienestar.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◯</text></svg>">
 </head>
 <body>
 
-    <!-- HEADER -->
     <header class="header" id="header">
-        <div class="container">
-            <a href="#" class="logo">Studio <span>Pilates</span></a>
-            <nav class="nav-links" id="navLinks">
+        <div class="header-inner">
+            <a href="#" class="logo">studio<span>pilates</span></a>
+            <nav class="nav" id="nav">
                 <a href="#inicio">Inicio</a>
                 <a href="#clases">Clases</a>
                 <a href="#precios">Precios</a>
-                <a href="#nosotros">Sobre Nosotros</a>
+                <a href="#nosotros">Nosotros</a>
                 <a href="#contacto">Contacto</a>
-                <a href="#reserva" class="btn btn-primary">Reserva tu Clase</a>
+                <a href="#reserva" class="nav-cta">Reservar</a>
             </nav>
-            <button class="hamburger" id="hamburger" aria-label="Menú">
-                <span></span><span></span><span></span>
+            <button class="menu-btn" id="menuBtn" aria-label="Menú">
+                <span></span><span></span>
             </button>
         </div>
     </header>
-    <div class="overlay" id="overlay"></div>
 
-    <!-- HERO -->
-    <section class="hero" id="inicio">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <span class="hero-tag">Studio Pilates</span>
-            <h1>Movimiento<br>consciente para tu<br><em>bienestar</em></h1>
-            <div class="hero-line"></div>
-            <p>Descubre el poder del Pilates en un espacio diseñado para reconectar con tu cuerpo y tu mente.</p>
-            <div class="hero-buttons">
-                <a href="#clases" class="btn btn-primary">Ver Clases</a>
-                <a href="#reserva" class="btn btn-outline-dark btn-outline">Reservar</a>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <span class="hero-label">Estudio de movimiento</span>
+                <h1>Tu cuerpo sabe<br>cómo <em>moverse.</em><br>Nosotros te<br>acompañamos.</h1>
+                <a href="#clases" class="hero-cta">Descubre nuestras clases →</a>
             </div>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80" alt="Estudio de Pilates">
-        </div>
-    </section>
-
-    <!-- SOBRE NOSOTROS -->
-    <section class="sobre-nosotros section-padding" id="nosotros">
-        <div class="container">
-            <div class="sobre-grid">
-                <div class="sobre-img">
-                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80" alt="Estudio de Pilates">
+            <div class="hero-visual">
+                <div class="hero-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900&q=80" alt="Sesión de Pilates en estudio con luz natural" loading="eager">
                 </div>
-                <div class="sobre-text">
-                    <h2>Un espacio dedicado a tu equilibrio</h2>
-                    <p>En Studio Pilates creemos que el movimiento es la base de una vida plena. Nuestro estudio fue fundado con la misión de ofrecer un ambiente cálido y profesional donde cada persona pueda trabajar en su bienestar físico y mental.</p>
-                    <p>Contamos con instalaciones de última generación, equipamiento de primer nivel y un equipo de profesores certificados que te acompañarán en cada paso de tu proceso.</p>
-                    <div class="sobre-features">
-                        <div class="sobre-feature">
-                            <div class="icon">✦</div>
-                            <span>Equipamiento Premium</span>
-                        </div>
-                        <div class="sobre-feature">
-                            <div class="icon">✦</div>
-                            <span>Profesores Certificados</span>
-                        </div>
-                        <div class="sobre-feature">
-                            <div class="icon">✦</div>
-                            <span>Grupos Reducidos</span>
-                        </div>
-                        <div class="sobre-feature">
-                            <div class="icon">✦</div>
-                            <span>Ambiente Relajante</span>
-                        </div>
+                <div class="hero-badge">
+                    <span class="badge-number">12</span>
+                    <span class="badge-text">años acompañando<br>nuestras alumnas</span>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="manifesto" id="nosotros">
+            <div class="manifesto-inner">
+                <span class="section-label">Lo que creemos</span>
+                <blockquote>
+                    "El Pilates no es solo ejercicio.<br>
+                    Es una conversación con tu cuerpo<br>
+                    que llevas tiempo sin tener."
+                </blockquote>
+                <div class="manifesto-grid">
+                    <div class="manifesto-col">
+                        <p>No creemos en atajos. Creemos en constancia, en escuchar, en encontrar tu ritmo. Cada cuerpo tiene una historia diferente y cada clase es una oportunidad para escribir la siguiente página.</p>
+                    </div>
+                    <div class="manifesto-col">
+                        <p>Nuestro estudio no es un gimnasio. Es un espacio donde el ruido del mundo se apaga y lo que queda es tu respiración, tu movimiento y un equipo que te entiende.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CLASES -->
-    <section class="clases section-padding" id="clases">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nuestras Clases</h2>
-                <p>Explora nuestras disciplinas diseñadas para todos los niveles y objetivos personales.</p>
-                <div class="line"></div>
+        <section class="clases" id="clases">
+            <div class="clases-header">
+                <span class="section-label">Disciplinas</span>
+                <h2>Lo que ofrecemos</h2>
             </div>
-            <div class="clases-grid">
-                <div class="clase-card">
-                    <div class="clase-card-img">
-                        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=600&q=80" alt="Pilates">
-                    </div>
-                    <div class="clase-card-body">
+            <div class="clases-list">
+                <article class="clase-item">
+                    <div class="clase-num">01</div>
+                    <div class="clase-content">
                         <h3>Pilates</h3>
-                        <p>Fortalece tu centro, mejora tu postura y ganflexibilidad con sesiones personalizadas en reformer y mat.</p>
-                        <a href="#reserva" class="btn btn-outline-dark">Reservar</a>
+                        <p>Trabajo en reformer y mat. Fortalecemos tu centro, alargamos los músculos y mejoramos tu postura día a día. Grupos de máximo 8 personas.</p>
+                        <span class="clase-meta">Lunes, Miércoles, Viernes · 7:00 – 20:00</span>
                     </div>
-                </div>
-                <div class="clase-card">
-                    <div class="clase-card-img">
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80" alt="Yoga">
+                    <div class="clase-img">
+                        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=600&q=80" alt="Clase de Pilates con reformer" loading="lazy">
                     </div>
-                    <div class="clase-card-body">
+                </article>
+                <article class="clase-item">
+                    <div class="clase-num">02</div>
+                    <div class="clase-content">
                         <h3>Yoga</h3>
-                        <p>Connéctate con tu respiración a través de posturas que equilibran cuerpo y mente en armonía perfecta.</p>
-                        <a href="#reserva" class="btn btn-outline-dark">Reservar</a>
+                        <p>Vinyasa, Hatha y restaurativo. Encontrarás tu zona de confort y la expandirás. Ideal para gestionar el estrés y ganar flexibilidad.</p>
+                        <span class="clase-meta">Martes, Jueves · 8:00 – 19:30</span>
                     </div>
-                </div>
-                <div class="clase-card">
-                    <div class="clase-card-img">
-                        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&q=80" alt="Meditación">
+                    <div class="clase-img">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80" alt="Práctica de yoga al amanecer" loading="lazy">
                     </div>
-                    <div class="clase-card-body">
+                </article>
+                <article class="clase-item">
+                    <div class="clase-num">03</div>
+                    <div class="clase-content">
                         <h3>Meditación</h3>
-                        <p>Aprende técnicas de mindfulness para reducir el estrés y cultivar una atención plena en tu día a día.</p>
-                        <a href="#reserva" class="btn btn-outline-dark">Reservar</a>
+                        <p>Mindfulness guiado y técnicas de respiración. Aprenderás a estar presente sin juzgar. Sesiones individuales y grupales disponibles.</p>
+                        <span class="clase-meta">Todos los días · 7:30 y 20:30</span>
+                    </div>
+                    <div class="clase-img">
+                        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&q=80" alt="Sesión de meditación grupal" loading="lazy">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="numeros">
+            <div class="numeros-inner">
+                <div class="numero">
+                    <span class="numero-val" data-target="547">0</span>
+                    <span class="numero-label">alumnas activas</span>
+                </div>
+                <div class="numero">
+                    <span class="numero-val" data-target="34">0</span>
+                    <span class="numero-label">clases por semana</span>
+                </div>
+                <div class="numero">
+                    <span class="numero-val" data-target="12">0</span>
+                    <span class="numero-label">profesoras certificadas</span>
+                </div>
+                <div class="numero">
+                    <span class="numero-val" data-target="9" data-decimal="true">0</span>
+                    <span class="numero-label">valoración media</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="voces">
+            <div class="voces-inner">
+                <span class="section-label">Voces reales</span>
+                <div class="voces-grid">
+                    <figure class="voz">
+                        <blockquote>"Llevo dos años y es lo único que nunca he abandonado. Mi espalda lo agradece cada día."</blockquote>
+                        <figcaption>
+                            <span class="voz-name">Carmen Ruiz</span>
+                            <span class="voz-detail">Pilates · desde 2024</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="voz">
+                        <blockquote>"No es un gimnasio más. Aquí me siento escuchada. Las profesoras conocen tu nombre y tu historia."</blockquote>
+                        <figcaption>
+                            <span class="voz-name">Lucía Fernández</span>
+                            <span class="voz-detail">Yoga y Meditación · desde 2023</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="voz">
+                        <blockquote>"Empecé por recomendación de mi fisioterapeuta. Ahora vengo porque es mi espacio favorito de la semana."</blockquote>
+                        <figcaption>
+                            <span class="voz-name">Almudena Vidal</span>
+                            <span class="voz-detail">Pilates · desde 2022</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="precios" id="precios">
+            <div class="precios-inner">
+                <div class="precios-header">
+                    <span class="section-label">Inversión</span>
+                    <h2>Planes simples,<br>sin sorpresas</h2>
+                </div>
+                <div class="precios-grid">
+                    <div class="precio-item">
+                        <span class="precio-tag">Prueba</span>
+                        <div class="precio-amount">€15</div>
+                        <span class="precio-unit">clase suelta</span>
+                        <p class="precio-note">Perfecta para conocernos. Sin compromiso, sin permanencia.</p>
+                        <a href="#reserva" class="precio-btn">Reservar esta clase</a>
+                    </div>
+                    <div class="precio-item precio-destacado">
+                        <span class="precio-tag">Más elegido</span>
+                        <div class="precio-amount">€60</div>
+                        <span class="precio-unit">pack de 5 clases</span>
+                        <p class="precio-note">Válido un mes. Incluye 1 clase de cortesía para regalar.</p>
+                        <a href="#reserva" class="precio-btn">Empezar con este pack</a>
+                        <ul class="precio-lista">
+                            <li>Acceso a todas las disciplinas</li>
+                            <li>Cambia de clase sin coste</li>
+                            <li>Material incluido</li>
+                        </ul>
+                    </div>
+                    <div class="precio-item">
+                        <span class="precio-tag">Ilimitado</span>
+                        <div class="precio-amount">€99</div>
+                        <span class="precio-unit">al mes</span>
+                        <p class="precio-note">Para quien quiera hacer de esto parte de su rutina diaria.</p>
+                        <a href="#reserva" class="precio-btn">Suscribirme</a>
+                        <ul class="precio-lista">
+                            <li>Clases ilimitadas</li>
+                            <li>1 sesión privada al mes</li>
+                            <li>Prioridad en plazas</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ESTADÍSTICAS -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>+500</h3>
-                    <p>Alumnas felices</p>
-                </div>
-                <div class="stat-item">
-                    <h3>+30</h3>
-                    <p>Clases semanales</p>
-                </div>
-                <div class="stat-item">
-                    <h3>+10</h3>
-                    <p>Profesores expertos</p>
-                </div>
-                <div class="stat-item">
-                    <h3>4.9 ⭐</h3>
-                    <p>Valoración media</p>
-                </div>
+        <section class="reserva" id="reserva">
+            <div class="reserva-inner">
+                <h2>Tu primera clase<br>es <em>por nuestra cuenta.</em></h2>
+                <p>Sin tarjeta, sin compromiso. Solo ven, disfruta y decide si encaja.</p>
+                <a href="https://wa.me/34600123456" class="reserva-cta" target="_blank" rel="noopener">Escríbenos por WhatsApp →</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- TESTIMONIOS -->
-    <section class="testimonios section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>Lo que dicen nuestras alumnas</h2>
-                <p>Historias reales de personas que transformaron su bienestar con nosotros.</p>
-                <div class="line"></div>
-            </div>
-            <div class="testimonios-grid">
-                <div class="testimonio-card">
-                    <p>Desde que empecé en Studio Pilates, mi postura mejoró enormemente y el dolor de espalda desapareció. El ambiente es increíble.</p>
-                    <div class="testimonio-author">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="María García" class="testimonio-avatar">
-                        <div>
-                            <h4>María García</h4>
-                            <span>Alumna desde 2023</span>
-                            <div class="stars">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonio-card">
-                    <p>Las clases de yoga y meditación me ayudaron a manejar la ansiedad. Profesionales excepcionales, siempre atentos a cada alumna.</p>
-                    <div class="testimonio-author">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Laura Martín" class="testimonio-avatar">
-                        <div>
-                            <h4>Laura Martín</h4>
-                            <span>Alumna desde 2024</span>
-                            <div class="stars">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonio-card">
-                    <p>El mejor estudio de la ciudad. Las instalaciones son preciosas y cada clase es una experiencia única de reconexión conmigo misma.</p>
-                    <div class="testimonio-author">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Ana Rodríguez" class="testimonio-avatar">
-                        <div>
-                            <h4>Ana Rodríguez</h4>
-                            <span>Alumna desde 2022</span>
-                            <div class="stars">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRECIOS -->
-    <section class="precios section-padding" id="precios">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nuestros Planes</h2>
-                <p>Elige la opción que mejor se adapte a tu ritmo y objetivos.</p>
-                <div class="line"></div>
-            </div>
-            <div class="precios-grid">
-                <div class="precio-card">
-                    <h3>Clase Suelta</h3>
-                    <p class="precio-desc">Ideal para probar</p>
-                    <div class="precio">€15 <span>/clase</span></div>
-                    <ul>
-                        <li>Acceso a una clase</li>
-                        <li>Consulta con profesor</li>
-                        <li>Sin compromiso</li>
-                    </ul>
-                    <a href="#reserva" class="btn btn-outline-dark">Reservar</a>
-                </div>
-                <div class="precio-card featured">
-                    <div class="badge-popular">Popular</div>
-                    <h3>Pack 5 Clases</h3>
-                    <p class="precio-desc">Nuestra recomendación</p>
-                    <div class="precio">€60 <span>/pack</span></div>
-                    <ul>
-                        <li>5 clases a elegir</li>
-                        <li>Validez 1 mes</li>
-                        <li>1 clase de regalo</li>
-                        <li>Acceso a materiales</li>
-                    </ul>
-                    <a href="#reserva" class="btn">Reservar</a>
-                </div>
-                <div class="precio-card">
-                    <h3>Mensual Ilimitado</h3>
-                    <p class="precio-desc">Para las más dedicadas</p>
-                    <div class="precio">€99 <span>/mes</span></div>
-                    <ul>
-                        <li>Clases ilimitadas</li>
-                        <li>Todas las disciplinas</li>
-                        <li>Acceso a eventos</li>
-                        <li>Sesión personalizada</li>
-                    </ul>
-                    <a href="#reserva" class="btn btn-outline-dark">Reservar</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RESERVA -->
-    <section class="reserva section-padding" id="reserva">
-        <div class="container">
-            <div class="fade-in">
-                <h2>¿Lista para empezar?</h2>
-                <p>Reserva tu primera clase gratuita y descubre lo que el Pilates puede hacer por ti.</p>
-                <a href="#contacto" class="btn btn-reserva">Reserva tu Clase Gratis</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer class="footer" id="contacto">
-        <div class="container">
-            <div class="footer-grid">
+        <div class="footer-inner">
+            <div class="footer-top">
                 <div class="footer-brand">
-                    <a href="#" class="logo">Studio <span>Pilates</span></a>
-                    <p>Tu espacio de bienestar en el corazón de la ciudad. Movemento, equilibrio y serenidad.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
-                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
-                        <a href="#" class="social-link" aria-label="TikTok">TK</a>
-                        <a href="#" class="social-link" aria-label="YouTube">YT</a>
-                    </div>
+                    <span class="logo">studio<span>pilates</span></span>
+                    <p>Calle del Movimiento, 14 · Madrid<br>Lunes a Viernes 7:00 – 21:00<br>Sábados 9:00 – 14:00</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Navegación</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#clases">Clases</a></li>
-                        <li><a href="#precios">Precios</a></li>
-                        <li><a href="#nosotros">Sobre Nosotros</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#clases">Clases</a>
+                    <a href="#precios">Precios</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
-                <div class="footer-col">
-                    <h4>Clases</h4>
-                    <ul>
-                        <li><a href="#clases">Pilates</a></li>
-                        <li><a href="#clases">Yoga</a></li>
-                        <li><a href="#clases">Meditación</a></li>
-                        <li><a href="#reserva">Reservar</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li>Calle Bienestar 42</li>
-                        <li>Madrid, España</li>
-                        <li>+34 600 123 456</li>
-                        <li>hola@studiopilates.com</li>
-                    </ul>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="TikTok">TikTok</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Studio Pilates. Todos los derechos reservados.</p>
+                <span>© 2026 Studio Pilates</span>
+                <span>CIF: B12345678</span>
             </div>
         </div>
     </footer>
 
     <script>
         const header = document.getElementById('header');
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-        const overlay = document.getElementById('overlay');
+        const menuBtn = document.getElementById('menuBtn');
+        const nav = document.getElementById('nav');
 
         window.addEventListener('scroll', () => {
             header.classList.toggle('scrolled', window.scrollY > 50);
         });
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('open');
-            overlay.classList.toggle('open');
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            nav.classList.toggle('open');
         });
 
-        overlay.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('open');
-            overlay.classList.remove('open');
-        });
-
-        navLinks.querySelectorAll('a').forEach(link => {
+        nav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('open');
-                overlay.classList.remove('open');
+                menuBtn.classList.remove('active');
+                nav.classList.remove('open');
             });
         });
 
@@ -340,6 +268,46 @@
                 if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
+
+        const observerOptions = { threshold: 0.2 };
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.clase-item, .voz, .precio-item, .numero, .manifesto-grid, .reserva-inner').forEach(el => {
+            el.classList.add('fade-up');
+            fadeObserver.observe(el);
+        });
+
+        const numerosSection = document.querySelector('.numeros');
+        let counted = false;
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counted) {
+                    counted = true;
+                    document.querySelectorAll('.numero-val').forEach(el => {
+                        const target = parseFloat(el.dataset.target);
+                        const isDecimal = el.dataset.decimal === 'true';
+                        const duration = 2000;
+                        const start = performance.now();
+                        const animate = (now) => {
+                            const progress = Math.min((now - start) / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            const current = eased * target;
+                            el.textContent = isDecimal ? current.toFixed(1) : Math.floor(current);
+                            if (progress < 1) requestAnimationFrame(animate);
+                            else el.textContent = isDecimal ? target.toFixed(1) : '+' + target;
+                        };
+                        requestAnimationFrame(animate);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        if (numerosSection) countObserver.observe(numerosSection);
     </script>
 </body>
 </html>

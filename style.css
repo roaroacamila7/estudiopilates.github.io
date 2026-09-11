@@ -64,8 +64,6 @@ em { font-style: italic; color: var(--blush-deep); }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 .logo {
@@ -315,8 +313,6 @@ em { font-style: italic; color: var(--blush-deep); }
 }
 
 .manifesto-inner {
-    max-width: 1200px;
-    margin: 0 auto;
     position: relative;
 }
 
@@ -448,8 +444,6 @@ em { font-style: italic; color: var(--blush-deep); }
 }
 
 .numeros-inner {
-    max-width: 1200px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -507,7 +501,7 @@ em { font-style: italic; color: var(--blush-deep); }
     padding: 140px 5vw;
 }
 
-.voces-inner { max-width: 1200px; margin: 0 auto; }
+.voces-inner { }
 
 .voces-grid {
     display: grid;
@@ -570,10 +564,7 @@ em { font-style: italic; color: var(--blush-deep); }
     background: var(--white);
 }
 
-.precios-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.precios-inner { }
 
 .precios-header {
     margin-bottom: 80px;
@@ -741,10 +732,7 @@ em { font-style: italic; color: var(--blush-deep); }
     background: var(--white);
 }
 
-.footer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.footer-inner { }
 
 .footer-top {
     display: grid;

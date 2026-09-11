@@ -607,7 +607,6 @@ em { font-style: italic; color: var(--blush-deep); }
 
 .precio-destacado {
     background: var(--text);
-    border-color: var(--text);
     color: var(--white);
 }
 
@@ -684,8 +683,6 @@ em { font-style: italic; color: var(--blush-deep); }
     gap: 12px;
     padding-top: 24px;
 }
-
-.precio-destacado .precio-lista { border-color: rgba(255,255,255,0.08); }
 
 .precio-lista li {
     font-size: 0.78rem;

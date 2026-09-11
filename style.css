@@ -347,7 +347,7 @@ em { font-style: italic; }
     gap: 40px;
 }
 
-.clases-header h2 { max-width: 380px; }
+.clases-header h2 { }
 
 .clases-list {
     display: flex;

@@ -389,8 +389,8 @@ em { font-style: italic; color: var(--accent-dark); }
 
 /* ===== NÚMEROS ===== */
 .numeros {
-    background: var(--accent);
-    padding: 80px 60px;
+    background: var(--bg);
+    padding: 100px 60px;
 }
 
 .numeros-inner {
@@ -398,19 +398,31 @@ em { font-style: italic; color: var(--accent-dark); }
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 24px;
 }
 
-.numero { text-align: left; }
+.numero {
+    text-align: left;
+    background: var(--accent);
+    padding: 36px 28px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.numero:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
 
 .numero-val {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
     font-weight: 400;
     color: var(--text);
     display: block;
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-variant-numeric: tabular-nums;
 }
 
@@ -767,7 +779,8 @@ em { font-style: italic; color: var(--accent-dark); }
     .manifesto { padding: 80px 24px; }
     .clases { padding: 80px 24px; }
     .numeros { padding: 60px 24px; }
-    .numeros-inner { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .numeros-inner { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .numero { padding: 28px 20px; }
     .voces { padding: 80px 24px; }
     .precios { padding: 80px 24px; }
     .reserva { padding: 80px 24px; }

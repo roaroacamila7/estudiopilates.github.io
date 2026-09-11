@@ -187,13 +187,11 @@ em { font-style: italic; color: var(--blush-deep); }
     text-transform: uppercase;
     color: var(--text);
     padding: 16px 0;
-    border-bottom: 1.5px solid var(--text);
     transition: all var(--transition);
 }
 
 .hero-cta:hover {
     gap: 18px;
-    border-color: var(--blush-deep);
     color: var(--blush-deep);
 }
 
@@ -356,7 +354,6 @@ em { font-style: italic; color: var(--blush-deep); }
     max-width: 800px;
     position: relative;
     padding-left: 32px;
-    border-left: 2px solid var(--blush-deep);
 }
 
 .manifesto-grid {
@@ -860,7 +857,6 @@ em { font-style: italic; color: var(--blush-deep); }
         padding: 48px;
         border-radius: 0;
         box-shadow: -8px 0 40px rgba(0,0,0,0.06);
-        border: none;
     }
     .nav.open { right: 0; }
     .nav a { font-size: 0.88rem; }

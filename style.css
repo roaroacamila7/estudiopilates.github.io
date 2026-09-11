@@ -87,7 +87,6 @@ em { font-style: italic; color: var(--blush-deep); }
     padding: 6px 8px 6px 24px;
     border-radius: 100px;
     box-shadow: 0 2px 20px rgba(26, 18, 16, 0.04);
-    border: 1px solid rgba(214, 201, 188, 0.4);
 }
 
 .nav a {
@@ -123,7 +122,6 @@ em { font-style: italic; color: var(--blush-deep); }
     flex-direction: column;
     gap: 5px;
     background: var(--white);
-    border: 1px solid var(--sand);
     cursor: pointer;
     padding: 14px 16px;
     border-radius: 100px;
@@ -237,7 +235,6 @@ em { font-style: italic; color: var(--blush-deep); }
     padding: 20px 24px;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(26, 18, 16, 0.08);
-    border: 1px solid rgba(214, 201, 188, 0.3);
 }
 
 .badge-number {
@@ -402,11 +399,10 @@ em { font-style: italic; color: var(--blush-deep); }
     gap: 40px;
     align-items: start;
     padding: 52px 0;
-    border-top: 1px solid var(--sand);
     transition: all var(--transition);
 }
 
-.clase-item:last-child { border-bottom: 1px solid var(--sand); }
+.clase-item:last-child { padding-bottom: 0; }
 
 .clase-num {
     font-family: 'Cormorant Garamond', serif;
@@ -520,7 +516,7 @@ em { font-style: italic; color: var(--blush-deep); }
     margin: 0 auto;
 }
 
-.voces-inner { max-width: 1100px; }
+.voces-inner { max-width: 1100px; margin: 0 auto; }
 
 .voces-grid {
     display: grid;
@@ -533,7 +529,6 @@ em { font-style: italic; color: var(--blush-deep); }
     padding: 36px 32px;
     background: var(--white);
     border-radius: 20px;
-    border: 1px solid rgba(214, 201, 188, 0.3);
     transition: all var(--transition);
     position: relative;
 }
@@ -604,7 +599,6 @@ em { font-style: italic; color: var(--blush-deep); }
 .precio-item {
     padding: 40px 28px;
     background: var(--bg);
-    border: 1px solid rgba(214, 201, 188, 0.4);
     border-radius: 20px;
     transition: all var(--transition);
 }
@@ -692,7 +686,6 @@ em { font-style: italic; color: var(--blush-deep); }
     flex-direction: column;
     gap: 12px;
     padding-top: 24px;
-    border-top: 1px solid rgba(214, 201, 188, 0.3);
 }
 
 .precio-destacado .precio-lista { border-color: rgba(255,255,255,0.08); }
@@ -756,7 +749,6 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== FOOTER ===== */
 .footer {
-    border-top: 1px solid var(--sand);
     padding: 64px;
     background: var(--white);
 }
@@ -771,7 +763,6 @@ em { font-style: italic; color: var(--blush-deep); }
     grid-template-columns: 1.5fr 1fr auto;
     gap: 72px;
     padding-bottom: 48px;
-    border-bottom: 1px solid var(--sand);
     margin-bottom: 32px;
 }
 

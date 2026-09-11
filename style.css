@@ -50,14 +50,14 @@ em { font-style: italic; color: var(--blush-deep); }
     left: 0;
     right: 0;
     z-index: 100;
-    padding: 28px 48px;
+    padding: 28px 5vw;
     transition: all var(--transition);
 }
 
 .header.scrolled {
     background: rgba(250, 247, 242, 0.85);
     backdrop-filter: blur(20px);
-    padding: 18px 48px;
+    padding: 18px 5vw;
 }
 
 .header-inner {
@@ -145,9 +145,7 @@ em { font-style: italic; color: var(--blush-deep); }
     display: grid;
     grid-template-columns: 55% 45%;
     align-items: center;
-    padding: 140px 64px 100px;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 140px 5vw 100px;
     gap: 48px;
 }
 
@@ -297,7 +295,7 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== MANIFESTO ===== */
 .manifesto {
-    padding: 140px 64px;
+    padding: 140px 5vw;
     background: var(--text);
     color: var(--white);
     position: relative;
@@ -317,7 +315,7 @@ em { font-style: italic; color: var(--blush-deep); }
 }
 
 .manifesto-inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -370,9 +368,7 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== CLASES ===== */
 .clases {
-    padding: 140px 64px;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 140px 5vw;
 }
 
 .clases-header {
@@ -447,12 +443,12 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== NÚMEROS ===== */
 .numeros {
-    padding: 100px 64px;
+    padding: 100px 5vw;
     background: var(--bg-warm);
 }
 
 .numeros-inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -508,12 +504,10 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== VOCES ===== */
 .voces {
-    padding: 140px 64px;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 140px 5vw;
 }
 
-.voces-inner { max-width: 1100px; margin: 0 auto; }
+.voces-inner { max-width: 1200px; margin: 0 auto; }
 
 .voces-grid {
     display: grid;
@@ -572,12 +566,12 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== PRECIOS ===== */
 .precios {
-    padding: 140px 64px;
+    padding: 140px 5vw;
     background: var(--white);
 }
 
 .precios-inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -702,7 +696,7 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== RESERVA ===== */
 .reserva {
-    padding: 160px 64px;
+    padding: 160px 5vw;
     background: var(--cream);
     position: relative;
 }
@@ -743,12 +737,12 @@ em { font-style: italic; color: var(--blush-deep); }
 
 /* ===== FOOTER ===== */
 .footer {
-    padding: 64px;
+    padding: 64px 5vw;
     background: var(--white);
 }
 
 .footer-inner {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 

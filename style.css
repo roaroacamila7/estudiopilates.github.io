@@ -567,18 +567,37 @@ em { font-style: italic; color: var(--sage-dark); }
 
 .numero {
     text-align: left;
-    padding: 40px 28px;
+    padding: 32px 28px;
     border-radius: var(--radius-lg);
     transition: all var(--transition);
     box-shadow: var(--shadow-soft);
     background: var(--white);
+    border: 1px solid rgba(43, 42, 39, 0.06);
 }
 
-.numero:nth-child(4n+2) { background: var(--bg-card); }
-.numero:nth-child(4n+3) { background: var(--blush); }
-.numero:nth-child(4n+4) { background: var(--sage); }
+.numero-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(43, 42, 39, 0.05);
+    color: var(--sage-dark);
+    margin-bottom: 24px;
+}
 
-.numero:hover { transform: translateY(-4px); }
+.numero-icon svg { width: 20px; height: 20px; }
+
+.numero:nth-child(4n+2) { background: var(--bg-card); border-color: transparent; }
+.numero:nth-child(4n+3) { background: var(--blush); border-color: transparent; }
+.numero:nth-child(4n+4) { background: var(--sage); border-color: transparent; }
+.numero:nth-child(4n+4) .numero-icon { background: rgba(255, 255, 255, 0.18); color: var(--white); }
+
+.numero:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(43, 42, 39, 0.12);
+}
 
 .numero-val {
     font-family: 'Plus Jakarta Sans', sans-serif;

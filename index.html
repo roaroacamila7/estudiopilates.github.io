@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◯</text></svg>">
 </head>
 <body>
@@ -33,13 +33,27 @@
     <main>
         <section class="hero" id="inicio">
             <div class="hero-text">
-                
+                <span class="hero-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    Madrid
+                </span>
                 <h1>Tu cuerpo sabe<br>cómo <em>moverse.</em><br>Nosotros te<br>acompañamos.</h1>
-                <a href="#clases" class="hero-cta">Descubre nuestras clases <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <div class="hero-actions">
+                    <a href="#clases" class="hero-cta">Descubre nuestras clases</a>
+                    <a href="#reserva" class="hero-cta-secondary">Reservar clase <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
             </div>
             <div class="hero-visual">
                 <div class="hero-img-wrap">
                     <img src="images/hero-pilates-reformer.jpg" alt="Mujer practicando Pilates en reformer" loading="eager">
+                    <div class="hero-socials">
+                        <a href="#" class="social-circle" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                        </a>
+                        <a href="#" class="social-circle" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-badge">
                     <span class="badge-number">12</span>
@@ -52,19 +66,31 @@
             </div>
         </section>
 
+        <div class="social-proof">
+            <div class="avatar-stack">
+                <span class="avatar">CR</span>
+                <span class="avatar">LF</span>
+                <span class="avatar">AV</span>
+            </div>
+            <div class="social-proof-text">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <p><strong>+547</strong> alumnas contentas</p>
+            </div>
+        </div>
+
         <section class="manifesto" id="nosotros">
             <div class="manifesto-inner">
                 <span class="section-label">Lo que creemos</span>
-                <blockquote>
-                    "El Pilates no es solo ejercicio.<br>
-                    Es una conversación con tu cuerpo<br>
-                    que llevas tiempo sin tener."
-                </blockquote>
                 <div class="manifesto-grid">
-                    <div class="manifesto-col">
+                    <blockquote class="bento-card bg-blush">
+                        "El Pilates no es solo ejercicio.<br>
+                        Es una conversación con tu cuerpo<br>
+                        que llevas tiempo sin tener."
+                    </blockquote>
+                    <div class="manifesto-col bento-card bg-white">
                         <p>No creemos en atajos. Creemos en constancia, en escuchar, en encontrar tu ritmo. Cada cuerpo tiene una historia diferente y cada clase es una oportunidad para escribir la siguiente página.</p>
                     </div>
-                    <div class="manifesto-col">
+                    <div class="manifesto-col bento-card bg-gray">
                         <p>Nuestro estudio no es un gimnasio. Es un espacio donde el ruido del mundo se apaga y lo que queda es tu respiración, tu movimiento y un equipo que te entiende.</p>
                     </div>
                 </div>
@@ -75,39 +101,50 @@
             <div class="clases-header">
                 <span class="section-label">Disciplinas</span>
                 <h2>Lo que ofrecemos</h2>
+                <div class="carousel-arrows">
+                    <button class="arrow-btn" id="clasesPrev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6"/></svg>
+                    </button>
+                    <button class="arrow-btn" id="clasesNext" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6"/></svg>
+                    </button>
+                </div>
             </div>
-            <div class="clases-list">
+            <div class="clases-list" id="clasesCarousel">
                 <article class="clase-item">
-                    <div class="clase-num">01</div>
+                    <div class="clase-img">
+                        <span class="clase-pill">Pilates</span>
+                        <img src="images/pilates-estudio.jpeg" alt="Clase de Pilates con reformer" loading="lazy">
+                    </div>
                     <div class="clase-content">
+                        <div class="clase-num">01</div>
                         <h3>Pilates</h3>
                         <p>Trabajo en reformer y mat. Fortalecemos tu centro, alargamos los músculos y mejoramos tu postura día a día. Grupos de máximo 8 personas.</p>
                         <span class="clase-meta">Lunes, Miércoles, Viernes · 7:00 – 20:00</span>
                     </div>
-                    <div class="clase-img">
-                        <img src="images/pilates-estudio.jpeg" alt="Clase de Pilates con reformer" loading="lazy">
-                    </div>
                 </article>
                 <article class="clase-item">
-                    <div class="clase-num">02</div>
+                    <div class="clase-img">
+                        <span class="clase-pill">Yoga</span>
+                        <img src="images/yoga-pilates.jpeg" alt="Práctica de yoga al amanecer" loading="lazy">
+                    </div>
                     <div class="clase-content">
+                        <div class="clase-num">02</div>
                         <h3>Yoga</h3>
                         <p>Vinyasa, Hatha y restaurativo. Encontrarás tu zona de confort y la expandirás. Ideal para gestionar el estrés y ganar flexibilidad.</p>
                         <span class="clase-meta">Martes, Jueves · 8:00 – 19:30</span>
                     </div>
-                    <div class="clase-img">
-                        <img src="images/yoga-pilates.jpeg" alt="Práctica de yoga al amanecer" loading="lazy">
-                    </div>
                 </article>
                 <article class="clase-item">
-                    <div class="clase-num">03</div>
+                    <div class="clase-img">
+                        <span class="clase-pill">Meditación</span>
+                        <img src="images/meditacion-pilates.jpeg" alt="Sesión de meditación grupal" loading="lazy">
+                    </div>
                     <div class="clase-content">
+                        <div class="clase-num">03</div>
                         <h3>Meditación</h3>
                         <p>Mindfulness guiado y técnicas de respiración. Aprenderás a estar presente sin juzgar. Sesiones individuales y grupales disponibles.</p>
                         <span class="clase-meta">Todos los días · 7:30 y 20:30</span>
-                    </div>
-                    <div class="clase-img">
-                        <img src="images/meditacion-pilates.jpeg" alt="Sesión de meditación grupal" loading="lazy">
                     </div>
                 </article>
             </div>
@@ -167,7 +204,7 @@
             <div class="precios-inner">
                 <div class="precios-header">
                     <span class="section-label">Inversión</span>
-                    <h2>Planes simples,<br>sin sorpresas</h2>
+                    <h2>Planes simples,<br><em>sin sorpresas</em></h2>
                 </div>
                 <div class="precios-grid">
                     <div class="precio-item">
@@ -308,6 +345,18 @@
             });
         }, { threshold: 0.3 });
         if (numerosSection) countObserver.observe(numerosSection);
+
+        const clasesCarousel = document.getElementById('clasesCarousel');
+        const clasesPrev = document.getElementById('clasesPrev');
+        const clasesNext = document.getElementById('clasesNext');
+        if (clasesCarousel && clasesPrev && clasesNext) {
+            const scrollStep = () => {
+                const item = clasesCarousel.querySelector('.clase-item');
+                return item ? item.offsetWidth + 32 : 320;
+            };
+            clasesPrev.addEventListener('click', () => clasesCarousel.scrollBy({ left: -scrollStep(), behavior: 'smooth' }));
+            clasesNext.addEventListener('click', () => clasesCarousel.scrollBy({ left: scrollStep(), behavior: 'smooth' }));
+        }
     </script>
 </body>
 </html>

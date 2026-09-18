@@ -170,12 +170,12 @@ em { font-style: italic; color: var(--sage-dark); }
 .hero {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 0.95fr 1.05fr;
     grid-template-rows: auto auto 1fr;
     grid-template-areas:
-        "heading visual"
-        "actions visual"
-        "spacer  visual";
+        "visual actions"
+        "visual heading"
+        "visual spacer";
     align-items: start;
     padding: 160px 48px 100px;
     gap: 16px 64px;
@@ -191,7 +191,7 @@ em { font-style: italic; color: var(--sage-dark); }
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .hero-cta {
@@ -252,7 +252,7 @@ em { font-style: italic; color: var(--sage-dark); }
 }
 
 .hero-img-wrap {
-    border-radius: 32px 120px 32px 32px;
+    border-radius: 120px 32px 32px 32px;
     overflow: hidden;
     position: relative;
     height: 100%;
@@ -308,7 +308,7 @@ em { font-style: italic; color: var(--sage-dark); }
 .hero-badge {
     position: absolute;
     bottom: 32px;
-    left: -28px;
+    right: -28px;
     background: var(--white);
     padding: 20px 24px;
     border-radius: var(--radius-md);
@@ -944,15 +944,15 @@ em { font-style: italic; color: var(--sage-dark); }
     .hero {
         grid-template-columns: 1fr;
         grid-template-areas:
-            "heading"
             "actions"
+            "heading"
             "visual";
         padding: 120px 48px 40px;
         gap: 32px;
     }
     .hero-visual { max-width: 460px; height: auto; }
     .hero-img-wrap { min-height: 360px; }
-    .hero-badge { bottom: -16px; left: -12px; }
+    .hero-badge { bottom: -16px; right: -12px; }
     .social-proof { padding: 0 48px 80px; }
     .manifesto-grid { grid-template-columns: 1fr; }
     .manifesto-grid blockquote { padding: 40px; }

@@ -628,6 +628,15 @@ em { font-style: italic; color: var(--sage-dark); }
 
 .numero:nth-child(4n+4) .numero-label { color: var(--on-dark-soft); }
 
+.numeros-caption {
+    text-align: center;
+    max-width: 480px;
+    margin: 48px auto 0;
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    line-height: 1.6;
+}
+
 /* ===== VOCES (bento) ===== */
 .voces {
     padding: 160px 48px;
